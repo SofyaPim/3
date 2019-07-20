@@ -1,0 +1,757 @@
+* {
+    margin: 0 auto:
+}
+
+.wrapper {
+    width: 1600px;
+    border: 50px solid rgb(211, 208, 208);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.floor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5%;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    /* Убирает подчеркивание для ссылок */
+    color: rgb(123, 123, 123);
+    /* Цвет ссылки */
+    padding: 5%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.enter-basket {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.enter-basket img {
+    width: 30px;
+    height: 30px;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(179, 174, 174);
+    margin: 0;
+    align-self: center;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+   
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+	
+}
+.modal-form{
+	 width:80%;
+	 display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+	margin-left:10%;
+}
+.modal-form  input{
+	  background-color: white;
+    border: 1px solid darkgrey;
+	 width:95%;
+    padding: 9px;
+	 margin: 9px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1, h2{
+	color:gray;
+}
+.title  h2{
+	font-style:italic;
+}
+
+.title button {
+    width: 150px;
+    padding: 9px;
+    background-color: white;
+    border: 1px solid darkgrey;
+}
+h3:hover{
+	text-decoration:underline;
+}
+h3{
+  position: relative;
+  display: inline-block;
+  font: 2em/1em sans-serif;
+  cursor: pointer;
+  
+  user-select: none;
+  height: 2.1em;
+}
+h3:after{
+  content:"";
+  border: 10px solid transparent;
+  border-top-color: #ccc;
+  position: absolute;
+  right: -30px;
+  top: 15px;
+}
+h3:hover + ul{
+  display: block;
+}
+ul{
+ background: #eee;
+ border: 1px solid #ddd;
+ border-radius: 1%;
+ display: none;
+ position: relative;
+ top: -1.5em;
+}
+ul:hover{
+  display: block;
+}
+li{
+ padding: 3% 5%;
+ border-top: 1px solid #fff;
+ border-bottom: 1px solid #ddd;
+ cursor: pointer;
+}
+li:first-child{border-top: none;}
+li:last-child{border-bottom: none;}
+li:hover{background: linear-gradient(#eee,#ddd);}
+
+
+
+
+
+.menu{
+	padding-left:28%;
+	width:800px;
+	display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+}
+.dropbtn {
+ 
+  color: gray;
+  padding: 16px;
+  font-size: 16px;
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+  font-style:italic;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  z-index: 1;
+  font-style:italic;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {text-decoration:underline;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  text-decoration:underline;
+}
+.new-arrival {
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+    padding-top: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    flex-wrap: wrap
+}
+
+.square p  img{
+	 width: 24px;
+    height: 24px;
+}
+
+.rectangle {
+    width: 400px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+}
+
+#lightgray {
+    background-color: lightgray;
+}
+
+#darkgray {
+    background-color: rgb(109, 103, 103);
+}
+
+.header-card {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(128, 122, 122);
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(155, 147, 147);
+    align-self: center;
+}
+.zigzag{
+	height:50px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.zigzag img{
+	width:70px;
+	height:40px;
+	
+	
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+	margin-top:8%;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+	height:30px;
+}
+
+.contact-button button {
+    color: antiquewhite;
+    background-color: chocolate;
+	height:30px;
+	width: 200px;
+	border:1px solid gray;
+	padding:3px;
+}
+.contact-button input{
+	width: 480px;
+	height:30px;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cards-Item{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	width:350px;
+	
+	border:2px solid lightgray;
+	margin:5px;
+	padding:10px;
+	
+	
+}
+.cards-Item img{
+	width:300px;
+	height:330px;
+	
+}
+.card-wrapper{
+	width:1580px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.form-wrapper{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	border:1px solid lightgray;
+	margin-bottom:5%;
+}
+.adres-form{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:600px;
+	justify-content:flex-start;
+	align-items: flex-start;
+	color:gray;
+	margin-left:10%;
+}
+
+.row{
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	
+}
+.adres-form input{
+	margin-right:13%;
+	height:30px;
+	border:1px solid gray;
+}
+.order-button{
+	display: flex;
+    flex-direction: column;
+	justify-content:center;
+	
+}
+.order-button input{
+	width: 480px;
+	height:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.order-button button{
+	width: 180px;
+	height:30px;
+	color: antiquewhite;
+    background-color: chocolate;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:1px solid gray;
+	padding:3px;
+	
+}
+
+.collection, .stores {
+    border-right: 2px solid rgb(156, 155, 155);
+}
+
+.collection, .stores, .socialnets {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 9px;
+    margin: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.social-icons {
+	width:120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.twitter{
+	width: 30px;
+	height:30px;
+	background-image: url(/nordic/sofia/myProject3/img/icons/twitter.png);
+	background-size:cover;
+	
+}          
+ .facebook{
+	 width: 30px;
+	height:30px;
+	background-image: url(/nordic/sofia/myProject3/img/icons/facebook.png);
+	background-size:cover;
+ 
+ }
+ .instagram{
+	 width: 30px;
+	height:30px;
+	background-image: url(/nordic/sofia/myProject3/img/icons/instagram.png);
+	background-size:cover;
+        
+ }
+ @media screen and (max-width: 780px) {
+ 
+    
+
+.wrapper {
+    width: 100%;
+    border: 1px solid rgb(211, 208, 208);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.floor {
+    display: flex;
+    flex-direction:row;
+	flex-wrap:wrap;
+    
+}
+
+
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.enter-basket {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.enter-basket img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-wrapper{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+   
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1, h2{
+	color:gray;
+	white-space: pre-wrap;
+}
+.title  h2{
+	font-style:italic;
+	white-space: pre-wrap;
+}
+
+.title button {
+    width: 150px;
+    padding: 9px;
+    background-color: white;
+    border: 1px solid darkgrey;
+}
+h3:hover{
+	text-decoration:underline;
+}
+h3{
+  position: relative;
+  display: inline-block;
+  font: 2em/1em sans-serif;
+  cursor: pointer;
+  
+  user-select: none;
+  height: 2.1em;
+}
+h3:after{
+  content:"";
+  border: 10px solid transparent;
+  border-top-color: #ccc;
+  position: absolute;
+  right: -30px;
+  top: 15px;
+}
+h3:hover + ul{
+  display: block;
+}
+ul{
+ background: #eee;
+ border: 1px solid #ddd;
+ border-radius: 1%;
+ display: none;
+ position: relative;
+ top: -1.5em;
+}
+ul:hover{
+  display: block;
+}
+li{
+ padding: 3% 5%;
+ border-top: 1px solid #fff;
+ border-bottom: 1px solid #ddd;
+ cursor: pointer;
+}
+li:first-child{border-top: none;}
+li:last-child{border-bottom: none;}
+li:hover{background: linear-gradient(#eee,#ddd);}
+
+
+
+
+
+.menu{
+	padding-left:1%;
+	width:100%;
+	display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+}
+.dropbtn {
+ 
+  color: gray;
+  padding: 16px;
+  font-size: 16px;
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+  font-style:italic;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  z-index: 1;
+  font-style:italic;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {text-decoration:underline;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  text-decoration:underline;
+}
+.new-arrival {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 9px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    flex-wrap: wrap
+}
+.adres-form{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:100%;
+	justify-content:flex-start;
+	align-items: flex-start;
+	color:gray;
+	margin-left:10%;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+	height:30px;
+}
+.contact-button form{
+	 display: flex;
+    flex-direction: column;
+	
+	
+}
+.contact-button button {
+    color: antiquewhite;
+    background-color: chocolate;
+    height: 30px;
+    width: 200px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-wrapper{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	border:1px solid lightgray;
+	margin-bottom:5%;
+}
+ }
